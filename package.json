@@ -41,7 +41,8 @@
     "fake-data": "node ./scripts/fakeData.js",
     "test": "TZ=utc vitest",
     "test:ci": "TZ=utc vitest run",
-    "test:coverage": "TZ=utc vitest run --coverage"
+    "test:coverage": "TZ=utc vitest run --coverage",
+    "cloudflare": "wrangler dev playground/.output/server/index.mjs --site playground/.output/public"
   },
   "repository": {
     "type": "git",
@@ -52,7 +53,8 @@
   ],
   "dependencies": {
     "@nuxt/kit": "^3.3.3",
-    "@tusbar/cache-control": "^0.6.1"
+    "@tusbar/cache-control": "^0.6.1",
+    "wrangler": "^3.4.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",

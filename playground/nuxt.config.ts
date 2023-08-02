@@ -24,4 +24,7 @@ export default defineNuxtConfig({
       authorization: false,
     },
   },
+  nitro : {
+    preset: 'cloudflare'
+  }
 })
